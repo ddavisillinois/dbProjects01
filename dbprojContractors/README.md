@@ -15,7 +15,7 @@ dotnet build
 To publish the project, the SqlPackage CLI or the SQL Database Projects extension for Azure Data Studio/VS Code is required. The following command will publish the project to a local SQL Server instance:
 
 ```bash
-./SqlPackage /Action:Publish /SourceFile:bin/Debug/dbprojContractors01.dacpac /TargetServerName:localhost /TargetDatabaseName:dbprojContractors01
+./SqlPackage /Action:Publish /SourceFile:bin/Debug/dbprojContractors.dacpac /TargetServerName:localhost /TargetDatabaseName:dbprojContractors
 ```
 
 Learn more about authentication and other options for SqlPackage here: https://aka.ms/sqlpackage-ref

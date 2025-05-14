@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build">
+  <Sdk Name="Microsoft.Build.Sql" Version="1.0.0" />
+  <PropertyGroup>
+    <Name>dbprojContractors</Name>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <ModelCollation>1033, CI</ModelCollation>
+    <ProjectGuid>{00000000-0000-0000-0000-000000000000}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dbprojLifeForm\dbprojLifeForm.sqlproj">
+      <Name>dbprojLifeForm</Name>
+      <Project>{5D1FB0D9-857E-49CF-9865-908BB0F56209}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

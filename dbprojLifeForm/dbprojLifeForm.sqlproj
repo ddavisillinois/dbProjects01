@@ -2,8 +2,12 @@
 <Project DefaultTargets="Build">
   <Sdk Name="Microsoft.Build.Sql" Version="1.0.0" />
   <PropertyGroup>
-    <Name>dbprojContractors01</Name>
+    <Name>dbprojLifeForm</Name>
+    <ProjectGuid>{5D1FB0D9-857E-49CF-9865-908BB0F56209}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
     <ModelCollation>1033, CI</ModelCollation>
   </PropertyGroup>
+  <Target Name="BeforeBuild">
+    <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
+  </Target>
 </Project>
