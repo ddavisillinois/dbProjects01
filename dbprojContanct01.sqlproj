@@ -7,6 +7,14 @@
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
     <ModelCollation>1033, CI</ModelCollation>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="dbprojLifeForm\dbprojLifeForm.sqlproj">
+      <Name>dbprojLifeForm</Name>
+      <Project>{5D1FB0D9-857E-49CF-9865-908BB0F56209}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+    </ProjectReference>
+  </ItemGroup>
   <Target Name="BeforeBuild">
     <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
   </Target>
